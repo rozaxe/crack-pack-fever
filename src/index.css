@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, bumblebee;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px -2px 12px 8px;
+  }
+  50% {
+    box-shadow: 0px -6px 18px 12px;
+  }
+  100% {
+    box-shadow: 0px -2px 12px 8px;
+  }
+}
+
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.booster {
+    transition: transform 4s cubic-bezier(0.37, 0, 0.63, 1) /* ease-in-out-sine */;
+}
+
+.booster-container:hover .booster {
+  transform: rotateY(0) rotateX(5deg) !important;
+  translate: 0 0 !important;
+  transition-duration: 100ms;  
+}
+
+.card-container.card-interactive:hover .card {
+  transform: scale(1) rotateX(var(--x-rotation)) rotateY(var(--y-rotation));
+}
+
+.card.card-rare::before, .card.card-mythic::before, .card.card-weird::before {
+  opacity: var(--effect, 0%);
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: glow 2s ease-in-out infinite;
+  border-radius: 4.75% / 7%;
+  height: 66%;
+  z-index: -1;
+}
+
+.card.card-rare::before {
+  color: oklch(82.8% 0.189 84.429);
+}
+
+.card.card-mythic::before {
+  color: oklch(74% 0.238 322.16);
+}
+
+.card.card-weird::before {
+  color: oklch(84.1% 0.238 128.85);
+}
+
+
+.foiled::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(130deg, #0ff, #f0f, #ff0, #0ff);
+  mix-blend-mode: overlay;
+  filter: brightness(0.9) contrast(1);
+  opacity: 0.6;
+  border-radius: 4.75% / 3.5%;
+}
+
+.card-indicator.foiled::before {
+  mix-blend-mode: difference;
+}
+
+.card-container.card-interactive:hover .card-indicator {
+  opacity: 0;
+}
+
+.collecting .card-container {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.card-container:hover .card-inner.foiled::before {
+  background: linear-gradient(130deg, #0ff, #f0f var(--x), #ff0 calc(var(--x) + 10%), #0ff);
+}
+
+@media (width >= 48rem) {
+  .collection-button:hover .collection-arrow {
+    transform: translateX(32px);
+  }
+  
+  .collection-button:hover .collection-arrow .ss {
+    transform: rotate(70deg);
+  }
+}

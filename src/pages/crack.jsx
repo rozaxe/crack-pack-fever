@@ -132,18 +132,18 @@ function generatePack(set) {
             }
         }
 
-        const printedCard = cloneDeep(card)
-
-        if (forceFoiled || printedCard.hasNonFoil === 0) {
-            printedCard.isFoil = true
+        if (card != null) {
+            const printedCard = cloneDeep(card)
+    
+            if (forceFoiled || printedCard.hasNonFoil === 0) {
+                printedCard.isFoil = true
+            }
         }
 
         return printedCard
     })
 
     const cards = probas.filter(c => !!c)
-
-    console.log('oo', cards)
 
     return shuffle(cards)
 }

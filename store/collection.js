@@ -37,7 +37,6 @@ export function usePutCollectionCards() {
     return useCallback(async (printedCards) => {
 
         for await (const printedCard of printedCards) {
-            console.log('rr', printedCard)
             const collectedCard = await db.cards.where('card').equals(printedCard.uuid).toArray()
 
             if (collectedCard.length === 1) {

@@ -14,7 +14,6 @@ let offset = buffer.length
 
 export function randomInt(min, max) {
     if (!(Number.isSafeInteger(min) && Number.isSafeInteger(max))) {
-        console.log(min, max)
         throw Error("min and max must be safe integers")
     }
     if (min > max) {

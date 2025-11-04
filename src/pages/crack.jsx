@@ -51,7 +51,7 @@ export function CrackPage() {
                 <Pack code={code} seed={seed} set={setQuery.data} />
             </div>
             <div ref={ref} id="origin" className="sticky bottom-[200px] left-[50%] w-0 h-0 bg-red-500" />
-            <button className={clsx("z-1 self-center w-full bg-indigo-500 px-5 py-3 z-1 text-white text-bold shadow-lg/50 flex flex-row items-center gap-2 justify-center", disabled && 'bg-slate-400', !disabled && 'cursor-pointer hover:bg-indigo-600')} onClick={handleRedo}>
+            <button className={clsx("z-1 sticky bottom-0 self-center w-full bg-indigo-500 px-5 py-3 z-1 text-white text-bold shadow-lg/50 flex flex-row items-center gap-2 justify-center", disabled && 'bg-slate-400', !disabled && 'cursor-pointer hover:bg-indigo-600')} onClick={handleRedo}>
                 {disabled && <span className="loading loading-spinner loading-md"></span>}
                 Crack another pack !
             </button>

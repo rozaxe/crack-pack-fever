@@ -55,15 +55,6 @@ const customs = {
         bottom: '#7dc6d7',
         
     },
-    'BLB': {
-        mtg: '/mtg_default.png',
-        rune: '#a2281a',
-        cover: '/cover/BLB.webp',
-        bot: '18px',
-        strip: '#237043',
-        background: 'linear-gradient(#83b2d3 60%, #9d9557 85%, #83b2d3 90%)',
-        bottom: '#83b2d3',
-    },
     'INR': {
         mtg: '/mtg_white.png',
         rune: '#b52d31',
@@ -96,6 +87,15 @@ const customs = {
         background: 'linear-gradient(#3e3a57, #1b1125)',
         bottom: '#212127'
     },
+    'BLB': {
+        mtg: '/mtg_default.png',
+        rune: '#a2281a',
+        cover: '/cover/BLB.webp',
+        bot: '18px',
+        strip: '#237043',
+        background: 'linear-gradient(#83b2d3 60%, #9d9557 85%, #83b2d3 90%)',
+        bottom: '#83b2d3',
+    },
     'ACR': {
         mtg: '/mtg_beyond.png',
         rune: 'transparent',
@@ -107,6 +107,50 @@ const customs = {
         background: '#efefef',
         bottom: '#efefef'
     },
+    'MH3': {
+        mtg: '/mtg_default.png',
+        rune: '#2aa7a0',
+        cover: '/cover/MH3.png',
+        width: '90%',
+        bot: '42px',
+        strip: '#f2f5f5',
+        text: '#9685a6',
+        background: '#cfbfe3',
+        bottom: '#cfbfe3'
+    },
+    'OTJ': {
+        mtg: '/mtg_default.png',
+        rune: '#122c51',
+        cover: '/cover/OTJ.png',
+        width: '90%',
+        bot: '42px',
+        strip: '#eb5e2e',
+        text: 'white',
+        background: 'linear-gradient(#0f8fb5, #dbd9d8, #ee8b52, #731a16)',
+        bottom: '#731a16'
+    },
+    'PIP': {
+        mtg: '/mtg_beyond_white.png',
+        rune: 'white',
+        cover: '/cover/PIP.png',
+        width: '80%',
+        bot: '50px',
+        strip: '#cdb95e',
+        text: 'black',
+        background: '#19323b',
+        bottom: '#19323b'
+    },
+    'CLU': {
+        mtg: '/mtg_white.png',
+        rune: 'white',
+        cover: '/cover/CLU.png',
+        width: '80%',
+        bot: '45px',
+        strip: '#e1e1e1',
+        text: 'black',
+        background: '#0b314c',
+        bottom: '#0b314c'
+    },
     'MKM': {
         mtg: '/mtg_default.png',
         rune: '#af7259',
@@ -117,6 +161,72 @@ const customs = {
         text: 'white',
         background: '#1e2a40',
         bottom: '#1e2a40'
+    },
+    'RVR': {
+        mtg: '/mtg_default.png',
+        rune: '#7cc0df',
+        cover: '/cover/RVR.png',
+        width: '90%',
+        bot: '42px',
+        strip: '#ce4a23',
+        text: 'white',
+        background: '#29425d',
+        bottom: '#29425d'
+    },
+    'LCI': {
+        mtg: '/mtg_black.png',
+        rune: '#432a5b',
+        cover: '/cover/LCI.png',
+        width: '70%',
+        bot: '42px',
+        strip: '#de456d',
+        text: 'white',
+        background: '#96c1eb',
+        bottom: '#96c1eb'
+    },
+    'WHO': {
+        mtg: '/mtg_beyond_white.png',
+        rune: 'transparent',
+        cover: '/cover/WHO.png',
+        width: '60%',
+        bot: '50px',
+        strip: '#17305a',
+        text: 'white',
+        background: 'linear-gradient(#4c4078, #8db4c2, #654277, #4c4078)',
+        bottom: '#4c4078'
+    },
+    'WOE': {
+        mtg: '/mtg_default.png',
+        rune: '#194e53',
+        cover: '/cover/WOE.png',
+        width: '70%',
+        bot: '50px',
+        strip: '#6c489e',
+        text: 'white',
+        background: 'linear-gradient(#14466b, #33b2b7, #14466b 90%)',
+        bottom: '#14466b'
+    },
+    'CMM': {
+        mtg: '/mtg_default.png',
+        rune: '#734a93',
+        cover: '/cover/CMM.png',
+        width: '100%',
+        bot: '32px',
+        strip: '#4db560',
+        text: 'white',
+        background: 'linear-gradient(#484264, #5dba7f, #d6707a, #ddbf55)',
+        bottom: '#ddbf55'
+    },
+    'LTR': {
+        mtg: '/mtg_beyond_white.png',
+        rune: '#eeb53c',
+        cover: '/cover/LTR.png',
+        width: '90%',
+        bot: '45px',
+        strip: '#1b5a50',
+        text: 'white',
+        background: 'linear-gradient(#a9c9d5, #384d67, #1d2028 90%)',
+        bottom: '#1d2028'
     },
     'VOW': {
         mtg: '/mtg_default.png',
